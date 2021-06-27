@@ -1,0 +1,83 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+header {
+    text-align: center;
+    font-size: 1.75em;
+}
+
+.menus {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.menu {
+    background: lightgray;
+    border: 2px solid darkmagenta;
+    position: relative;
+    margin: 1.5em 0;
+}
+
+.menu-title {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: 2px solid black;
+    margin: 0;
+    padding: 0.2em 0;
+    width: 200px;
+    text-align: center;
+    font-size: 1.25em;
+}
+
+.title-pink {
+    background-color: pink;
+}
+.title-red {
+    background-color: rgb(184, 38, 38);
+    color: white;
+}
+.title-yellow {
+    background-color: lightyellow;
+}
+
+.menu-text {
+    margin-top: 3em;
+    padding: 0 1em;
+}
+
+@media screen and (min-width: 768px) {
+    .menus {
+        width: 90%;
+    }
+    .menu {
+        margin: 0;
+    }
+    .menu:nth-child(1) {
+        float: left;
+        width: 48%;
+    }
+    .menu:nth-child(2) {
+        float: right;
+        width: 48%;
+    }
+    .menu:nth-child(3) {
+        float: left;
+        margin-top: 2em;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .menus {
+        width: 95%;
+    }
+    .menu {
+        float: left !important;
+        width: 30% !important;
+        margin: 0 0.8em !important;
+    }
+}
