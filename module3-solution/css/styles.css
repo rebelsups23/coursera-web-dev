@@ -1,0 +1,6 @@
+body {
+    overflow-x: hidden!important;
+}
+.item {
+    margin: 2em 0;
+}
